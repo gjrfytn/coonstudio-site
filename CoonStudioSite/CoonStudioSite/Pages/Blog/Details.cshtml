@@ -2,10 +2,8 @@
 @model CoonStudioSite.Pages.Blog.DetailsModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = @Html.DisplayFor(model => model.BlogEntry.Title);
 }
-
-<!DOCTYPE html>
 
 <html>
 <head>
@@ -14,33 +12,33 @@
 </head>
 <body>
 
-<div>
-    <h4>BlogEntry</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BlogEntry.Title)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BlogEntry.Title)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BlogEntry.Date)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BlogEntry.Date)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BlogEntry.Content)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BlogEntry.Content)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.BlogEntry.ID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
-</div>
+    <div>
+        <h4>BlogEntry</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BlogEntry.Title)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BlogEntry.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BlogEntry.Date)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BlogEntry.Date)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BlogEntry.Content)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BlogEntry.Content)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-page="./Edit" asp-route-id="@Model.BlogEntry.ID">Edit</a> |
+        <a asp-page="./Index">Back to List</a>
+    </div>
 </body>
 </html>

@@ -2,10 +2,8 @@
 @model CoonStudioSite.Pages.Blog.CreateModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Create";
 }
-
-<!DOCTYPE html>
 
 <html>
 <head>
@@ -14,37 +12,37 @@
 </head>
 <body>
 
-<h4>BlogEntry</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BlogEntry.Title" class="control-label"></label>
-                <input asp-for="BlogEntry.Title" class="form-control" />
-                <span asp-validation-for="BlogEntry.Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BlogEntry.Date" class="control-label"></label>
-                <input asp-for="BlogEntry.Date" class="form-control" />
-                <span asp-validation-for="BlogEntry.Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BlogEntry.Content" class="control-label"></label>
-                <input asp-for="BlogEntry.Content" class="form-control" />
-                <span asp-validation-for="BlogEntry.Content" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
+    <h4>BlogEntry</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="BlogEntry.Title" class="control-label"></label>
+                    <input asp-for="BlogEntry.Title" class="form-control" />
+                    <span asp-validation-for="BlogEntry.Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BlogEntry.Date" class="control-label"></label>
+                    <input asp-for="BlogEntry.Date" class="form-control" />
+                    <span asp-validation-for="BlogEntry.Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BlogEntry.Content" class="control-label"></label>
+                    <input asp-for="BlogEntry.Content" class="form-control" />
+                    <span asp-validation-for="BlogEntry.Content" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
+    <div>
+        <a asp-page="Index">Back to List</a>
+    </div>
 
 </body>
 </html>
