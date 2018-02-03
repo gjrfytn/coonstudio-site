@@ -7,9 +7,9 @@ namespace CoonStudioSite.Pages.Blog
 {
     public class CreateModel : PageModel
     {
-        private readonly CoonGamesSite.Models.CoonStudioSiteContext _context;
+        private readonly CoonStudioSiteContext _context;
 
-        public CreateModel(CoonGamesSite.Models.CoonStudioSiteContext context)
+        public CreateModel(CoonStudioSiteContext context)
         {
             _context = context;
         }

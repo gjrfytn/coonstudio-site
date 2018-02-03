@@ -8,9 +8,9 @@ namespace CoonStudioSite.Pages.Blog
 {
     public class DetailsModel : PageModel
     {
-        private readonly CoonGamesSite.Models.CoonStudioSiteContext _context;
+        private readonly CoonStudioSiteContext _context;
 
-        public DetailsModel(CoonGamesSite.Models.CoonStudioSiteContext context)
+        public DetailsModel(CoonStudioSiteContext context)
         {
             _context = context;
         }

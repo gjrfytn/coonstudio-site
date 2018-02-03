@@ -11,9 +11,10 @@ using System;
 namespace CoonStudioSite.Migrations
 {
     [DbContext(typeof(CoonStudioSiteContext))]
-    partial class CoonStudioSiteContextModelSnapshot : ModelSnapshot
+    [Migration("20180203123523_TagAdd")]
+    partial class TagAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

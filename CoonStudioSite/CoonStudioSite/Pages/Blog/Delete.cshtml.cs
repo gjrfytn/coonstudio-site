@@ -8,9 +8,9 @@ namespace CoonStudioSite.Pages.Blog
 {
     public class DeleteModel : PageModel
     {
-        private readonly CoonGamesSite.Models.CoonStudioSiteContext _context;
+        private readonly CoonStudioSiteContext _context;
 
-        public DeleteModel(CoonGamesSite.Models.CoonStudioSiteContext context)
+        public DeleteModel(CoonStudioSiteContext context)
         {
             _context = context;
         }

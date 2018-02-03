@@ -9,9 +9,9 @@ namespace CoonStudioSite.Pages.Blog
 {
     public class EditModel : PageModel
     {
-        private readonly CoonGamesSite.Models.CoonStudioSiteContext _context;
+        private readonly CoonStudioSiteContext _context;
 
-        public EditModel(CoonGamesSite.Models.CoonStudioSiteContext context)
+        public EditModel(CoonStudioSiteContext context)
         {
             _context = context;
         }

@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model CoonStudioSite.Pages.Blog.DetailsModel
 
 @{
@@ -33,6 +33,12 @@
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.BlogEntry.Content)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BlogEntry.Tag)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BlogEntry.Tag)
             </dd>
         </dl>
     </div>
