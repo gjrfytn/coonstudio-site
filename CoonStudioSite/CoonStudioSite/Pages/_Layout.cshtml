@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CoonStudioSite</title>
+    <title>@ViewData["Title"] - Coon Studio</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,13 +26,40 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">CoonStudioSite</a>
+                <a class="navbar-brand" asp-page="/Index">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="~/images/racoon_tr.png"
+                                     class="d-inline-block align-top"
+                                     height="30"
+                                     alt="Coon logo">
+                            </td>
+                            <td>
+                                Coon Studio
+                            </td>
+                        </tr>
+                    </table>
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Blog/Index">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" asp-page="/Index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Studio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" asp-page="/About">About</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" asp-page="/Index">Team</a>
+                            </li>
+                            <li>  <a class="dropdown-item" asp-page="/Index">Contact</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,7 +68,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - CoonStudioSite</p>
+            <p>&copy; 2018 - Coon Studio</p>
         </footer>
     </div>
 
